@@ -1,13 +1,15 @@
 <template>
     <div>
+        <Head>
+            <Title>'Mini Nuxt App | {{ product.title }}</Title>
+            <Meta name="description" :content="product.description" />
+        </Head>
         <P_Details :product="product" />
     </div>
 </template>
 
 <script setup>
 import P_Details from '~~/components/Product/P_Details.vue';
-
-
 const { id } = useRoute().params;
 definePageMeta({
     layout: 'products'
