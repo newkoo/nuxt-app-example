@@ -1,4 +1,5 @@
 <template>
+    <NuxtLoadingIndicator :height="7"></NuxtLoadingIndicator>
     <div>
         <header class="shadow-sm bg-white">
             <nav class="container mx-auto p-4">
