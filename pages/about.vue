@@ -7,13 +7,12 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit harum quisquam nulla maiores nobis non.
             Expedita fugit dolorum dolorem ullam, eveniet voluptate labore deserunt molestias assumenda, error
             accusantium ex magnam!</p>
+        <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
-definePageMeta({
-    layout: 'default'
-})
+const { data } = await useFetch('/api/currency/TRY');
 </script>
 
 <style scoped>

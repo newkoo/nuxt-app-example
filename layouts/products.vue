@@ -28,7 +28,12 @@
 </template>
 
 <script setup>
-
+useHead({
+    title: 'Mini Nuxt App | Merchant',
+    meta:[
+        {name:'description',content:'Nuxt 3 Merchant'}
+    ]
+})
 </script>
 
 <style scoped>
